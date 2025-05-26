@@ -1,21 +1,27 @@
-public class Ingredient {
-    private String name;
-    private String quantity;
+package models;
 
-    public Ingredient(String name, String quantity) {
-        this.name = name;
-        this.quantity = quantity;
+public class Ingredient {
+    private int ingredientId;
+    private String ingredientName;
+
+    public Ingredient(int ingredientId, String ingredientName) {
+        this.ingredientId = ingredientId;
+        this.ingredientName = ingredientName;
+    }
+
+    public Ingredient(String ingredientName) { // for insert
+        this.ingredientName = ingredientName;
+    }
+
+    public int getIngredientId() {
+        return ingredientId;
     }
 
     public String getName() {
-        return this.name;
+        return ingredientName;
     }
 
-    public String getQuantity() {
-        return this.quantity;
-    }
-
-    public String toString() {
-        return this.name + " (" + this.quantity + ")";
+    public void setIngredientId(int ingredientId) {
+        this.ingredientId = ingredientId;
     }
 }
