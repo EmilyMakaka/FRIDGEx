@@ -1,27 +1,16 @@
-package models;
-
+// Ingredient.java
 public class Ingredient {
-    private int ingredientId;
-    private String ingredientName;
+    private String name;
+    private double quantity;
+    private Unit unit;
 
-    public Ingredient(int ingredientId, String ingredientName) {
-        this.ingredientId = ingredientId;
-        this.ingredientName = ingredientName;
+    public Ingredient(String name, double quantity, Unit unit) {
+        this.name = name;
+        this.quantity = quantity;
+        this.unit = unit;
     }
 
-    public Ingredient(String ingredientName) { // for insert
-        this.ingredientName = ingredientName;
-    }
-
-    public int getIngredientId() {
-        return ingredientId;
-    }
-
-    public String getName() {
-        return ingredientName;
-    }
-
-    public void setIngredientId(int ingredientId) {
-        this.ingredientId = ingredientId;
+    public String toString() {
+        return quantity + " " + unit.getName() + " of " + name;
     }
 }
