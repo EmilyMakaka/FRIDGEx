@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.AdminDashboardController">
+    <children>
+        <Button text="View Users" layoutX="30" layoutY="30" onAction="#handleViewUsers"/>
+        <Button text="Delete User" layoutX="30" layoutY="70" onAction="#handleDeleteUser"/>
+        <TextField fx:id="deleteUserField" layoutX="150" layoutY="70"/>
+
+        <Button text="View Recipes" layoutX="30" layoutY="110" onAction="#handleViewRecipes"/>
+        <Button text="Delete Recipe" layoutX="30" layoutY="150" onAction="#handleDeleteRecipe"/>
+        <TextField fx:id="deleteRecipeField" layoutX="150" layoutY="150"/>
+
+        <Button text="Logout" layoutX="30" layoutY="190" onAction="#handleLogout"/>
+
+        <TextArea fx:id="outputArea" layoutX="300" layoutY="30" prefWidth="300" prefHeight="250"/>
+    </children>
+</AnchorPane>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.UserDashboardController">
+    <children>
+
+        <Label text="Welcome to Your Recipe App!" layoutX="30" layoutY="10" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Button text="Create Recipe" layoutX="30" layoutY="30" onAction="#handleCreateRecipe"/>
+        <Button text="View My Recipes" layoutX="150" layoutY="30" onAction="#handleViewRecipes"/>
+        <Button text="Logout" layoutX="300" layoutY="30" onAction="#handleLogout"/>
+
+        <Label text="Search:" layoutX="30" layoutY="80"/>
+        <TextField fx:id="searchField" layoutX="100" layoutY="80"/>
+        <Button text="Search" layoutX="250" layoutY="80" onAction="#handleSearch"/>
+
+        <TextArea fx:id="outputArea" layoutX="30" layoutY="120" prefWidth="500" prefHeight="200"/>
+
+    </children>
+</AnchorPane>

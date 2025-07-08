@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.WelcomeController"
+            prefWidth="400" prefHeight="300"
+            style="-fx-background-color: #fdf5e6;">
+
+    <Label text="🍲 Welcome to Recipe Manager!"
+           layoutX="80" layoutY="40"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <Button text="Login"
+            fx:id="loginButton"
+            layoutX="150" layoutY="120"
+            prefWidth="100"
+            onAction="#handleLogin"/>
+
+    <Button text="Register"
+            fx:id="registerButton"
+            layoutX="150" layoutY="170"
+            prefWidth="100"
+            onAction="#handleRegister"/>
+
+    <Label text="Choose an option to get started 👇"
+           layoutX="100" layoutY="90"
+           style="-fx-font-size: 14px; -fx-text-fill: #666666;"/>
+</AnchorPane>

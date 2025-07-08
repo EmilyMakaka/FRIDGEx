@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.RegisterController"
+            prefWidth="400" prefHeight="400"
+            style="-fx-background-color: #fdf5e6;">
+
+    <Label layoutX="140" layoutY="20" text="📝 Create an Account"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <Label layoutX="50" layoutY="80" text="Username:" />
+    <TextField fx:id="usernameField" layoutX="150" layoutY="75" prefWidth="200" />
+
+    <Label layoutX="50" layoutY="130" text="Email:" />
+    <TextField fx:id="emailField" layoutX="150" layoutY="125" prefWidth="200" />
+
+    <Label layoutX="50" layoutY="180" text="Password:" />
+    <PasswordField fx:id="passwordField" layoutX="150" layoutY="175" prefWidth="200" />
+
+    <Label layoutX="50" layoutY="230" text="Role:" />
+    <ComboBox fx:id="roleComboBox" layoutX="150" layoutY="225" prefWidth="200" />
+
+    <Button fx:id="registerButton" layoutX="150" layoutY="290" text="Register"
+            onAction="#handleRegister" prefWidth="200"
+            style="-fx-background-color: #7FB77E; -fx-text-fill: white;" />
+
+    <Button fx:id="backButton" layoutX="150" layoutY="340" text="Back to Welcome"
+            onAction="#handleBack" prefWidth="200"
+            style="-fx-background-color: #ccc;" />
+</AnchorPane>
